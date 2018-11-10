@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+//import Button from 'antd/lib/button';
+import { Button } from 'antd';
 import logo from './logo.svg';
-import './App.css';
+import './less/App.less';
 
 class App extends Component {
   render() {
@@ -9,16 +11,14 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
+            你好 <span className="jp">もしもし</span> <i class="material-icons">lock_outline</i>
+          </p>
+          <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Button type="primary" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
             Learn React
-          </a>
+          </Button>
         </header>
       </div>
     );
